@@ -39,51 +39,51 @@ a { color: inherit; text-decoration: none; }
 img { object-fit: cover; }
 
 .siteHeader {
-  height: 92px; padding: 10px 3vw; display: grid; grid-template-columns: 120px 1fr auto;
+  height: 61px; padding: 6px 3vw; display: grid; grid-template-columns: 120px 1fr auto;
   align-items: center; border-bottom: 1px solid var(--line); background: rgba(255,253,248,.93);
   backdrop-filter: blur(12px); background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-repeat: no-repeat; background-blend-mode: multiply; position: sticky; top: 0; z-index: 50;
 }
-.brand { height: 72px; display: flex; align-items: center; overflow: hidden; }
-.brand img { width: 48px; height: auto; object-fit: contain; }
+.brand { height: 48px; display: flex; align-items: center; overflow: hidden; }
+.brand img { width: 34px; height: auto; object-fit: contain; }
 nav { justify-self: center; display: flex; gap: 3rem; font-size: 12px; letter-spacing: .08em; }
 nav a, footer a { transition: opacity .2s; }
 nav a:hover, footer a:hover { opacity: .55; }
-.buyButton { background-color: var(--yellow); background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-blend-mode: multiply; color: var(--ink); padding: 15px 20px; border-radius: 999px; font-size: 12px; box-shadow: 0 5px 0 rgba(197,141,98,.25); }
+.buyButton { background-color: var(--yellow); background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-blend-mode: multiply; color: var(--ink); padding: 10px 14px; border-radius: 999px; font-size: 11px; box-shadow: 0 5px 0 rgba(197,141,98,.25); }
 .buyButton span, .textLink span, .primaryCta span { margin-left: 18px; }
 
-.packageIntro { min-height: calc(100svh - 92px); padding: 24px 2vw; display: grid; place-items: center; background-color: #fffdf8; background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-repeat: no-repeat; background-blend-mode: multiply; overflow: hidden; }
-.packageStage { position: relative; width: min(96vw, calc((100svh - 140px) * 1.177)); aspect-ratio: 1478 / 1256; height: auto; min-height: 0; margin: 0 auto; overflow: hidden; }
+.packageIntro {display: grid; place-items: center; background-color: #fffdf8; background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-repeat: no-repeat; background-blend-mode: multiply; overflow: hidden; }
+.packageStage { position: relative; width: min(96vw, calc((100svh - 140px) * 1.177)); aspect-ratio: 1478 / 1256; height: auto; min-height: 0; margin: 0 auto; }
 .introDot { position: absolute; width: clamp(70px, 9vw, 132px); aspect-ratio: 1; z-index: 1; opacity: 0; background-color: #ffe000; background-image: url("../images/illustrations/paper-texture.jpg"); background-size: 420px auto; background-blend-mode: multiply; clip-path: polygon(50% 0, 66% 3%, 80% 12%, 92% 25%, 99% 42%, 97% 59%, 89% 76%, 74% 91%, 57% 98%, 39% 96%, 22% 88%, 8% 74%, 1% 56%, 3% 38%, 13% 21%, 29% 7%); animation: packageDotIn .65s cubic-bezier(.2,.8,.2,1) forwards; }
 .dot1 { left: 10%; top: 8%; animation-delay: .15s; transform: rotate(-12deg); }
-.dot2 { left: 52%; top: -9%; width: clamp(88px, 11vw, 155px); animation-delay: .45s; transform: rotate(13deg); }
-.dot3 { right: 3%; top: 4%; animation-delay: .75s; transform: rotate(-7deg); }
-.dot4 { right: 13%; top: 44%; animation-delay: 1.05s; transform: rotate(18deg); }
-.dot5 { left: -3%; bottom: 17%; width: clamp(84px, 10vw, 145px); animation-delay: 1.35s; transform: rotate(-16deg); }
-.dot6 { left: 30%; bottom: -10%; animation-delay: 1.65s; transform: rotate(9deg); }
-.dot7 { left: 58%; bottom: -7%; width: clamp(95px, 12vw, 168px); animation-delay: 1.95s; transform: rotate(-12deg); }
+.dot2 { left: 52%; top: -9%; width: clamp(88px, 11vw, 155px); animation-delay: .15s; transform: rotate(13deg); }
+.dot3 { right: 3%; top: 4%; animation-delay: .45s; transform: rotate(-7deg); }
+.dot4 { right: 13%; top: 44%; animation-delay: .45s; transform: rotate(18deg); }
+.dot5 { left: -3%; bottom: 17%; width: clamp(84px, 10vw, 145px); animation-delay: .75s; transform: rotate(-16deg); }
+.dot6 { left: 30%; bottom: -10%; animation-delay: .75s; transform: rotate(9deg); }
+.dot7 { left: 58%; bottom: -7%; width: clamp(95px, 12vw, 168px); animation-delay: 1.05s; transform: rotate(-12deg); }
 .introSand { position: absolute; z-index: 2; height: auto; object-fit: cover; mix-blend-mode: multiply; opacity: 0; animation: packageSandIn .8s cubic-bezier(.16,.8,.25,1) forwards; }
-.sand1 { width: 29%; left: 27%; top: 10%; transform: rotate(-1deg); animation-delay: 2.2s; }
-.sand2 { width: 29%; left: 27%; top: 26%; transform: rotate(1deg); animation-delay: 2.5s; }
-.sand3 { width: 28%; left: 27%; top: 40%; transform: rotate(-1deg); animation-delay: 2.8s; }
-.sand4 { width: 15%; right: 27%; top: 12%; bottom: auto; transform: rotate(0); animation-delay: 3.1s; }
-.sand5 { width: 31%; left: 27%; bottom: 23%; transform: rotate(-2deg); animation-delay: 3.4s; }
-.introBrand { position: absolute; z-index: 4; left: calc(62% + 19px); top: 61%; transform: translate(-50%,-50%) scale(.94); opacity: 0; animation: packageBrandIn 1.2s cubic-bezier(.2,.8,.2,1) 4.15s forwards; }
+.sand1 { width: 29%; left: 27%; top: 10%; transform: rotate(-1deg); animation-delay: 1.05s; }
+.sand2 { width: 29%; left: 27%; top: 26%; transform: rotate(1deg); animation-delay: 1.35s; }
+.sand3 { width: 28%; left: 27%; top: 40%; transform: rotate(-1deg); animation-delay: 1.35s; }
+.sand4 { width: 15%; right: 27%; top: 12%; bottom: auto; transform: rotate(0); animation-delay: 1.65s; }
+.sand5 { width: 31%; left: 27%; bottom: 23%; transform: rotate(-2deg); animation-delay: 1.65s; }
+.introBrand { position: absolute; z-index: 4; left: calc(62% + 19px); top: 61%; transform: translate(-50%,-50%) scale(.94); opacity: 0; animation: packageBrandIn 1.2s cubic-bezier(.2,.8,.2,1) 2.35s forwards; }
 .introBrand img { display: block; width: clamp(84px, 9vw, 126px); height: auto; object-fit: contain; }
-.introGuide { position: absolute; z-index: 5; left: 50%; bottom: 1%; transform: translateX(-50%); margin: 0; opacity: 0; animation: packageGuideIn .8s ease 5.1s forwards; font: 400 13px var(--font-display); letter-spacing: .12em; white-space: nowrap; }
-.introGuide span { display: inline-block; margin-left: 10px; animation: guideBounce 1.7s ease-in-out 5.8s infinite; }
+.introGuide { position: absolute; z-index: 5; left: 50%; bottom: 1%; transform: translateX(-50%); margin: 0; opacity: 0; animation: packageGuideIn .8s ease 2.85s forwards; font: 400 13px var(--font-display); letter-spacing: .12em; white-space: nowrap; }
+.introGuide span { display: inline-block; margin-left: 10px; animation: guideBounce 1.7s ease-in-out 3.55s infinite; }
 @keyframes packageDotIn { from { opacity: 0; scale: .2; filter: blur(8px); } to { opacity: 1; scale: 1; filter: blur(0); } }
 @keyframes packageSandIn { from { opacity: 0; translate: 0 24px; scale: .86; filter: blur(7px); } to { opacity: .96; translate: 0 0; scale: 1; filter: blur(0); } }
 @keyframes packageBrandIn { from { opacity: 0; transform: translate(-50%,-46%) scale(.9); filter: blur(8px); } to { opacity: 1; transform: translate(-50%,-50%) scale(1); filter: blur(0); } }
 @keyframes packageGuideIn { to { opacity: .65; } }
 @keyframes guideBounce { 50% { transform: translateY(6px); } }
 
-.hero { min-height: calc(100svh - 92px); display: grid; grid-template-columns: 43% 57%; position: relative; overflow: hidden; background-color: #fff; background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-repeat: no-repeat; background-blend-mode: multiply; }
+.hero { display: grid; grid-template-columns: 43% 57%; position: relative; overflow: hidden; background-color: #fff; background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-repeat: no-repeat; background-blend-mode: multiply; }
 .heroCopy { position: relative; padding: 8vh 5vw 100px; z-index: 2; background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-repeat: no-repeat; background-blend-mode: multiply; }
 .heroCopy::before, .heroCopy::after { content: ""; position: absolute; background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-blend-mode: multiply; clip-path: polygon(50% 0, 66% 3%, 80% 12%, 92% 25%, 99% 42%, 97% 59%, 89% 76%, 74% 91%, 57% 98%, 39% 96%, 22% 88%, 8% 74%, 1% 56%, 3% 38%, 13% 21%, 29% 7%); pointer-events: none; }
 .heroCopy::before { width: 72px; height: 68px; left: 8%; top: 11%; background-color: #ffe000; transform: rotate(17deg); }
 .heroCopy::after { width: 118px; height: 108px; left: auto; right: 10%; bottom: 8%; background-color: #ffe000; transform: rotate(-13deg); }
 .eyebrow, .enLabel { font: 400 15px/1.3 var(--font-display); letter-spacing: .08em; }
-.eyebrow, .enLabel, .heroEnglish, .ticker, .displayWord, .textureCard strong, .creamFacts b, .flavorTop small, .productNotes span:last-child, footer small { text-transform: uppercase; }
+.eyebrow, .enLabel, .heroEnglish, .displayWord, .textureCard strong, .creamFacts b, .flavorTop small, .productNotes span:last-child, footer small { text-transform: uppercase; }
 .productNotes span:last-child { font-family: var(--font-display); font-size: 13px; }
 h1, h2, .bigCopy, .flavorCard h3, .steps h3, footer p { font-family: var(--font-title); font-weight: 300; }
 .ryuminHeading {
@@ -94,14 +94,14 @@ h1, h2, .bigCopy, .flavorCard h3, .steps h3, footer p { font-family: var(--font-
 }
 h1 { font-size: clamp(42px, 4.7vw, 72px); line-height: 1.42; letter-spacing: .01em; margin: 2.5vh 0 3vh; }
 .heroEnglish { margin: 6vh 0 0; font-family: var(--font-display); font-size: clamp(44px, 5.8vw, 86px); line-height: .94; letter-spacing: .085em; font-weight: 400; }
-.lead { line-height: 2.1; font-size: 15px; }
+.lead { position: relative; z-index: 4; line-height: 2.1; font-size: 15px; }
 .textLink { display: inline-block; margin-top: 5vh; padding-bottom: 8px; border-bottom: 1px solid; font-size: 13px; }
-.heroVisual { position: relative; min-height: 640px; background-color: #ffe000; background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-blend-mode: multiply; border-radius: 0 0 0 180px; }
+.heroVisual { position: relative; min-height: 640px; background-color: #ffe000; background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-blend-mode: multiply; }
 .imagePaper { position: absolute; inset: 9% 6% 13% 7%; background: #fff; transform: rotate(-1deg); box-shadow: 0 22px 50px rgba(135,106,52,.13); overflow: hidden; border-radius: 46% 54% 44% 56% / 8% 10% 8% 9%; }
 .imagePaper img { object-fit: cover; object-position: center; }
-.verticalNote { writing-mode: vertical-rl; position: absolute; right: 2%; bottom: 6%; font: 400 12px/1.9 var(--font-ryumin); letter-spacing: .16em; }
-.ticker { position: absolute; bottom: 0; left: 0; width: 100%; height: 56px; background: #fff; color: var(--ink); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-around; font: 400 18px var(--font-display); letter-spacing: .08em; z-index: 4; }
-.ticker i { color: var(--yellow); font-style: normal; }
+.verticalNote { writing-mode: vertical-rl; position: absolute; right: 2%; bottom: 6%; font: 400 12px/1.9 var(--font-ryumin); letter-spacing: .16em; transform: translate(-15px, -15px); }
+.dotDivider { width: 100%; height: 16px; background-image: radial-gradient(circle, var(--ink) 1.1px, transparent 1.2px); background-size: 13px 100%; background-repeat: repeat-x; background-position: center; opacity: .3; }
+.dotDivider--top { height: 32px; margin-top: 24px; background-image: radial-gradient(circle, var(--ink) 2.2px, transparent 2.3px); background-size: 26px 100%; }
 .watercolorArt { position: absolute; object-fit: contain; pointer-events: none; z-index: 3; filter: saturate(.94); opacity: .85 !important; }
 .heroArt { width: 170px; height: auto; left: auto; right: -8px; bottom: 72px; transform: rotate(9deg); }
 
@@ -159,12 +159,15 @@ h2 { font-size: clamp(38px, 4.2vw, 64px); line-height: 1.42; letter-spacing: -.0
 .flavorCard:nth-child(2) .flavorImage img { object-position: 58% center; }
 .flavorCard:nth-child(3) .flavorImage img { object-position: 58% center; }
 .flavorCard:nth-child(2) .flavorImage { transform: none; }
+.flavorTextRow { position: relative; z-index: 2; display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; }
+.flavorTextBlock { min-width: 0; }
+.flavorTitleRow { display: flex; align-items: center; gap: 10px; }
 .flavorCard h3 { font: 300 28px/1.5 var(--font-title); letter-spacing: .07em; margin: 10px 0 5px; }
-.flavorCard h3, .flavorCard > p { position: relative; z-index: 2; max-width: 68%; }
 .flavorCard p { font-size: 12px; }
-.flavorMiniArt { position: absolute; z-index: 2; width: 118px; height: auto; right: 16px; bottom: 48px; object-fit: contain; transform: rotate(-5deg); }
+.flavorMiniArt { width: 78px; height: auto; object-fit: contain; transform: rotate(-5deg); }
 .flavorCard:nth-child(2) .flavorMiniArt { transform: rotate(5deg); }
 .flavorCard:nth-child(3) .flavorMiniArt { transform: rotate(-2deg); }
+.packagePlaceholder { flex: 0 0 auto; width: 64px; aspect-ratio: 3 / 5; border: 1px dashed var(--line); border-radius: 6px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 9px; line-height: 1.5; color: rgba(73,66,62,.5); }
 
 .craft { background-color: #fffaf0; background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-repeat: no-repeat; background-blend-mode: multiply; display: grid; grid-template-columns: 1fr 2fr; gap: 6vw; position: relative; overflow: hidden; }
 .craftWord { position: absolute; left: 2vw; top: 70px; color: rgba(145,189,89,.14); }
@@ -180,6 +183,7 @@ h2 { font-size: clamp(38px, 4.2vw, 64px); line-height: 1.42; letter-spacing: -.0
 .steps h3 { font: 300 20px/1.65 var(--font-title); letter-spacing: .07em; margin: 0; }
 .steps p { font-size: 12px; line-height: 1.9; margin: 0; }
 .craftArt { width: 240px; height: auto; left: -55px; bottom: 38px; transform: rotate(-31deg) scaleX(-1); }
+.steps li:nth-child(5) { position: relative; z-index: 4; }
 
 .gift { display: grid; grid-template-columns: .72fr 1.38fr; align-items: center; gap: 4vw; background-color: #f7e88d; background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-repeat: no-repeat; background-blend-mode: multiply; position: relative; overflow: hidden; }
 .giftWord { position: absolute; right: 2vw; top: 55px; color: rgba(255,255,255,.48); }
@@ -251,13 +255,13 @@ footer small { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
 }
 
 @media (max-width: 900px) {
-  .siteHeader { height: 72px; grid-template-columns: 1fr auto; padding: 8px 18px; }
-  .brand { height: 56px; }
-  .brand img { width: 37px; }
+  .siteHeader { height: 48px; grid-template-columns: 1fr auto; padding: 5px 18px; }
+  .brand { height: 37px; }
+  .brand img { width: 25px; }
   nav { display: none; }
-  .buyButton { padding: 12px 15px; }
-  .packageIntro { min-height: calc(100svh - 72px); padding: 18px 2vw; }
-  .packageStage { width: 96vw; aspect-ratio: 1478 / 1256; height: auto; min-height: 0; }
+  .buyButton { padding: 8px 10px; font-size: 10px; }
+  .packageIntro { min-height: calc(100svh - 48px); padding: 0; }
+  .packageStage { width: auto; height: calc(100svh - 48px); max-width: none; aspect-ratio: 1478 / 1256; margin: 0 auto; }
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .heroCopy { padding: 70px 24px 60px; }
   .heroEnglish { font-size: clamp(52px, 16vw, 74px); margin-top: 35px; }
@@ -265,7 +269,6 @@ footer small { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
   h1 { font-size: clamp(38px, 11vw, 58px); }
   .heroVisual { min-height: 520px; }
   .imagePaper { inset: 8% 7% 15%; }
-  .ticker { gap: 24px; width: max-content; min-width: 100%; padding: 0 20px; }
   .section { padding: 90px 24px; }
   .story { grid-template-columns: 1fr; gap: 20px; }
   .displayWord { font-size: clamp(72px, 25vw, 116px); }
@@ -281,7 +284,7 @@ footer small { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
   .flavorGrid { grid-template-columns: 1fr; }
   .flavorCard { min-height: 500px; }
   .flavorImage { height: auto; aspect-ratio: 600 / 650; }
-  .flavorMiniArt { width: 98px; right: 17px; bottom: 20px; }
+  .flavorMiniArt { width: 64px; }
   .craft { grid-template-columns: 1fr; }
   .craftIntro { position: static; }
   .craftIntroArt { width: 190px; margin-top: 28px; }
