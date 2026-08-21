@@ -150,11 +150,11 @@ h2 { font-size: clamp(38px, 4.2vw, 64px); line-height: 1.42; letter-spacing: -.0
 .frontArtBand > div:nth-child(2) { transform: rotate(3deg) translateY(8px); }
 .frontArtBand > div:nth-child(3) { transform: rotate(-2deg); }
 .flavorGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-.flavorCard { min-height: 660px; padding: 32px 28px 34px; overflow: hidden; position: relative; background-color: #fffdf8; border-radius: 48% 48% 6px 6px / 15% 15% 6px 6px; filter: drop-shadow(0 13px 18px rgba(103,79,54,.13)); }
+.flavorCard { min-height: 580px; padding: 32px 28px 34px; overflow: hidden; position: relative; background-color: #fffdf8; border-radius: 48% 48% 6px 6px / 15% 15% 6px 6px; filter: drop-shadow(0 13px 18px rgba(103,79,54,.13)); }
 .flavorCard { background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-repeat: no-repeat; background-blend-mode: multiply; }
 .flavorArt { width: 275px; height: auto; right: -35px; top: 46px; transform: rotate(9deg); }
 .flavorTop { position: relative; z-index: 3; display: flex; justify-content: space-between; padding: 8px 7px 0; font: 400 16px var(--font-display); letter-spacing: .06em; }
-.flavorImage { position: relative; z-index: 2; height: auto; aspect-ratio: 600 / 650; margin: 22px -8px 22px; transform: none; overflow: visible; background: transparent; }
+.flavorImage { position: relative; z-index: 2; height: auto; aspect-ratio: 600 / 650; margin: 0px -20px 0px; transform: none; overflow: visible; background: transparent; }
 .flavorImage img { object-fit: contain; object-position: center; }
 .flavorCard:nth-child(2) .flavorImage img { object-position: 58% center; }
 .flavorCard:nth-child(3) .flavorImage img { object-position: 58% center; }
@@ -162,14 +162,14 @@ h2 { font-size: clamp(38px, 4.2vw, 64px); line-height: 1.42; letter-spacing: -.0
 .flavorTextRow { position: relative; z-index: 2; display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; }
 .flavorTextBlock { min-width: 0; }
 .flavorTitleRow { display: flex; align-items: center; gap: 10px; }
-.flavorCard h3 { font: 300 28px/1.5 var(--font-title); letter-spacing: .07em; margin: 10px 0 5px; }
+.flavorCard h3 { font: 300 20px/1.5 var(--font-title); letter-spacing: .07em; margin: 10px 0 5px; }
 .flavorCard p { font-size: 12px; }
-.flavorMiniArt { width: 78px; height: auto; object-fit: contain; transform: rotate(-5deg); }
+.flavorMiniArt { width: 46px; height: auto; object-fit: contain; transform: rotate(-5deg); }
 .flavorCard:nth-child(2) .flavorMiniArt { transform: rotate(5deg); }
 .flavorCard:nth-child(3) .flavorMiniArt { transform: rotate(-2deg); }
-.packageCutout { flex: 0 0 auto; width: 64px; aspect-ratio: 3 / 5; object-fit: contain; border-radius: 6px; }
+.packageCutout { flex: 0 0 auto; width: 54px; aspect-ratio: 3 / 4; object-fit: contain; border-radius: 6px; }
 
-.craft { background-color: #fffaf0; background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-repeat: no-repeat; background-blend-mode: multiply; display: grid; grid-template-columns: 1fr 2fr; gap: 6vw; position: relative; overflow: hidden; }
+.craft { background-color: #fffaf0; background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-repeat: no-repeat; background-blend-mode: multiply; display: grid; grid-template-columns: 1fr 2fr; gap: 6vw; position: relative;}
 .craftWord { position: absolute; left: 2vw; top: 70px; color: rgba(145,189,89,.14); }
 .craft::after { content: ""; position: absolute; width: 120px; height: 110px; left: 4%; bottom: 5%; background-color: var(--peach); background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-blend-mode: multiply; opacity: .85; clip-path: polygon(50% 0, 66% 3%, 80% 12%, 92% 25%, 99% 42%, 97% 59%, 89% 76%, 74% 91%, 57% 98%, 39% 96%, 22% 88%, 8% 74%, 1% 56%, 3% 38%, 13% 21%, 29% 7%); transform: rotate(-16deg); }
 .craftIntro { position: sticky; top: 130px; align-self: start; }
@@ -284,7 +284,7 @@ footer small { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
   .flavorGrid { grid-template-columns: 1fr; }
   .flavorCard { min-height: 500px; }
   .flavorImage { height: auto; aspect-ratio: 600 / 650; }
-  .flavorMiniArt { width: 64px; }
+  .flavorMiniArt { width: 44px; }
   .craft { grid-template-columns: 1fr; }
   .craftIntro { position: static; }
   .craftIntroArt { width: 190px; margin-top: 28px; }
