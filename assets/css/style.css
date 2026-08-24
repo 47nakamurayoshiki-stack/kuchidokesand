@@ -164,10 +164,8 @@ h2 { font-size: clamp(38px, 4.2vw, 64px); line-height: 1.42; letter-spacing: -.0
 .flavorTitleRow { display: flex; align-items: center; gap: 10px; }
 .flavorCard h3 { font: 300 20px/1.5 var(--font-title); letter-spacing: .07em; margin: 10px 0 5px; }
 .flavorCard p { font-size: 12px; }
-.flavorMiniArt { width: 46px; height: auto; object-fit: contain; transform: rotate(-5deg); }
-.flavorCard:nth-child(2) .flavorMiniArt { transform: rotate(5deg); }
-.flavorCard:nth-child(3) .flavorMiniArt { transform: rotate(-2deg); }
-.packageCutout { flex: 0 0 auto; width: 54px; aspect-ratio: 3 / 4; object-fit: contain; border-radius: 6px; }
+.flavorMiniArt { width: 46px; height: auto; object-fit: contain; }
+.packageCutout { flex: 0 0 auto; width: 4.1rem; aspect-ratio: 3 / 4; object-fit: contain; border-radius: 6px; }
 
 .craft { background-color: #fffaf0; background-image: url("../images/illustrations/paper-texture.jpg"); background-size: cover; background-repeat: no-repeat; background-blend-mode: multiply; display: grid; grid-template-columns: 1fr 2fr; gap: 6vw; position: relative;}
 .craftWord { position: absolute; left: 2vw; top: 70px; color: rgba(145,189,89,.14); }
