@@ -267,8 +267,8 @@ footer small { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
   .footerBrand .corpLogo { height: 32px; }
   nav { display: none; }
   .buyButton { padding: 8px 10px; font-size: 12px; }
-  .packageIntro { min-height: calc(80svh - 48px); padding: 0; }
-  .packageStage { width: 92vw; height: auto; max-width: 560px; aspect-ratio: 1158 / 1406; margin: 0; justify-self: center; align-self: center; }
+  .packageIntro { min-height: auto; padding: 28px 0 36px; }
+  .packageStage { width: 96vw; height: auto; max-width: 600px; aspect-ratio: 1158 / 1406; margin: 0; justify-self: center; align-self: center; }
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .heroCopy { padding: 70px 24px 60px; }
   .heroEnglish { font-size: clamp(52px, 10vw, 74px); margin-top: 35px; }
